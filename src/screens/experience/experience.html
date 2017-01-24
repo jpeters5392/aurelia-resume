@@ -1,0 +1,12 @@
+<template>
+    <require from="./employer.html"></require>
+    <require from="../../resources/value-converters/employerValueConverter"></require>
+    <header>
+        <h1>Work Experience</h1>
+    </header>
+    <article>
+        <ul>
+            <employer repeat.for="employer of workExperience | employer" employer.bind="employer" />
+        </ul>
+    </article>
+</template>

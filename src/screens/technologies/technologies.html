@@ -1,0 +1,12 @@
+<template>
+    <require from="./category.html"></require>
+    <require from="../../resources/value-converters/categoryValueConverter"></require>
+    <header>
+        <h1>Technologies</h1>
+    </header>
+    <article>
+        <ul class="categories">
+            <category repeat.for="category of categories | category" category.bind="category" />
+        </ul>
+    </article>
+</template>

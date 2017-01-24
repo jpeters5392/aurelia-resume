@@ -1,0 +1,11 @@
+<template>
+    <require from="./certificationItem.html"></require>
+    <header>
+        <h1>Professional Certifications</h1>
+    </header>
+    <article>
+        <ul>
+            <certificationItem repeat.for="certification of certifications" certification.bind="certification" />
+        </ul>
+    </article>
+</template>

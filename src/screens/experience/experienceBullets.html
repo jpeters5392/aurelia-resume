@@ -1,0 +1,7 @@
+<template bindable="bulletPoints">
+    <ul if.bind="bulletPoints.length > 0" class="bullet-points">
+        <li repeat.for="bullet of bulletPoints">
+            ${bullet}
+        </li>
+    </ul>
+</template>

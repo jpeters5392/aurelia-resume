@@ -1,0 +1,9 @@
+<template bindable="category">
+    <require from="./technologyItem.html"></require>
+    <li class="category">
+        <h2>${category.name}</h2>
+        <ul class="category-technologies">
+            <technologyItem repeat.for="technology of category.technologies" technology.bind="technology" />
+        </ul>
+    </li>
+</template>

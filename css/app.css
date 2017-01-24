@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #212121;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+strong {
+    color: #757575;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+nav.navbar {
+    background-color: #455A64;
+}
+
+.navbar .navbar-item {
+    float: left;
+    padding: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.navbar .navbar-item:not(:first-child) {
+    border-left: 1px solid #BDBDBD;
+}
+
+.navbar .navbar-item:hover {
+    cursor: pointer;
+    background-color: #CDDC39;
+}
+
+.navbar .navbar-item.is-active {
+    background-color: #CDDC39;
+    color: #757575;
+}
+
+article {
+    padding: 16px 16px 16px 16px;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 32px;
+    background-color: #607D8B;
+    color: #FFFFFF;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.category {
+    border: 1px solid #BDBDBD;
+    margin: 8px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+.employer {
+    border: 1px solid #BDBDBD;
+    margin-top: 8px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+.employer:first {
+    margin-top: 0px;
+}
+
+.category h2, .employer h2 {
+    background-color: #CFD8DC;
+    padding: 8px;
+}
+
+.employer .positions, .category .category-technologies {
+    padding: 8px;
+}
+
+.bullet-points li {
+    border-bottom: 1px dotted #BDBDBD;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 4px;
+}
+
+.bullet-points li:last-child {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 480px) {
+    article {
+        padding: 0px;
+    }
+
+    .navbar .navbar-item {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar .navbar-item:not(:first-child) {
+        border-top: 1px solid #BDBDBD;
+    }
+
+    .categories {
+        display: block;
+        width: 100%;
+    }
+
+    .category {
+        width: 100%;
+        margin: 0px;
+        box-shadow: none;
+    }
+
+    .bullet-points {
+        margin: 0px;
+    }
+}

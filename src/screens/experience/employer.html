@@ -1,0 +1,9 @@
+<template bindable="employer">
+    <require from="./experienceItem.html"></require>
+    <li class="employer">
+        <h2>${employer.name}</h2>
+        <ul class="positions">
+            <experienceItem repeat.for="experience of employer.titles" experience.bind="experience" />
+        </ul>
+    </li>
+</template>

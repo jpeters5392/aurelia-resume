@@ -1,0 +1,9 @@
+<template bindable="experience">
+    <require from="./experienceBullets.html"></require>
+    <li data-experience-id.bind="experience.id">
+        <div class="experience-description">
+            <strong>${experience.title}</strong> - (${experience.beginDate} - ${experience.endDate})
+        </div>
+        <experienceBullets bullet-points.bind="experience.bulletPoints" />
+    </li>
+</template>

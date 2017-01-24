@@ -1,0 +1,9 @@
+<template bindable="router">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header clearfix">
+            <a repeat.for="row of router.navigation" class="navbar-item ${row.isActive ? 'is-active' : ''}" href.bind="row.href">
+                <span>${row.title}</span>
+            </a>
+        </div>
+    </nav>
+</template>
